@@ -83,6 +83,6 @@ a{
 
 .base-picture__item{
     margin-top: 50px;
-    padding: 0 50px;
+    margin: 0 50px;
     width: 250px;
 }
