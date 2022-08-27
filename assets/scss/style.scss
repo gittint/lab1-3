@@ -1,5 +1,4 @@
 @import "base";
-@import "responsive";
 
 /* header  */
 .box{
@@ -52,10 +51,10 @@
 
         &-btn{
             font-size: 16px;
-            border: 2px solid var(--blue);
+            border: 2px solid $blue;
             padding: 15px 20px;
             border-radius: 100px;
-            color: var(--blue);
+            color: $blue;
             font-weight: 600;
         }
     }
@@ -73,7 +72,7 @@
             font-size: 24px;
             letter-spacing: 1px;
             line-height: 14px;
-            color: var(--text);
+            color: $text;
             font-weight: 300;
             margin-bottom: 30px;
         }
@@ -90,7 +89,7 @@
             line-height: 30px;
             margin-bottom: 30px;
             font-weight: 700;
-            text-shadow: var(--white) 1px 1px 1px;
+            text-shadow: $white 1px 1px 1px;
         }
 
         &-btn{
@@ -98,11 +97,11 @@
             font-size: 16px;
             text-align: center;
             width: 100px;
-            border: 2px solid var(--blue);
+            border: 2px solid $blue;
             padding: 15px 10px;
             border-radius: 100px;
-            color: var(--white);
-            background-color: var(--blue);
+            color: $white;
+            background-color: $blue;
             font-weight: 600;
         
         }
@@ -122,7 +121,7 @@
             &--icon{
                 font-size: 40px;
                 margin: 40px 0;
-                color: var(--blue);
+                color: $blue;
             }
 
             &--name{
@@ -138,36 +137,36 @@
                     left: 37%;
                     bottom: -85%;
                     position: absolute;
-                    border-bottom:3px solid var(--blue);
+                    border-bottom:3px solid $blue;
                 }
             }
 
             &--desc{
                 margin-bottom: 50px;
                 font-size: 16px;
-                color: var(--text);
+                color: $text;
             }
 
             &.active{
-                background-color: var(--blue);
+                background-color: $blue;
                 box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
                 .body__service-item{
 
                     &--icon{
-                        color: var(--white);
+                        color: $white;
                     }
 
                     &--name{
-                        color: var(--white);
+                        color: $white;
 
                         &::after{
-                            border-color: var(--white);
+                            border-color: $white;
                         }
                     }
 
                     &--desc{
-                        color: var(--white);
+                        color: $white;
                     }
 
                 }
@@ -179,7 +178,7 @@
     &__portfolio{
         padding-top: 100px;
         padding-bottom: 100px;
-        background-color: var(--bg-body);
+        background-color: $bg-body;
 
         &-item{
             display: block;
@@ -200,12 +199,12 @@
 
                 &-head{
                     font-size: 16px;
-                    color: var(--white);
+                    color: $white;
                 }
 
                 &-name{
                     font-size: 24px;
-                    color: var(--white);
+                    color: $white;
                     padding: 20px 0;
                 }
             }
@@ -227,7 +226,7 @@
             &--heading{
                 font-size: 34px;
                 line-height: 26px;
-                color: var(--text);
+                color: $text;
                 font-weight: 300;
                 margin-bottom: 20px;
             }
@@ -236,17 +235,17 @@
                 font-size: 16px;
                 letter-spacing: 0px;
                 line-height: 28px;
-                color: var(--text);
+                color: $text;
             }
         }
 
         &-btn{
             display: block;
             font-size: 16px;
-            border: 2px solid var(--blue);
+            border: 2px solid $blue;
             padding: 15px 20px;
             border-radius: 100px;
-            color: var(--blue);
+            color: $blue;
             font-weight: 600;
             width: 100px;
             text-align: center;
@@ -256,7 +255,7 @@
     &__feedback{
         padding-top: 100px;
         padding-bottom: 100px;
-        background-color: var(--bg-body);
+        background-color: $bg-body;
 
         &-head{
             width: 390px;
@@ -284,14 +283,14 @@
         &-job{
             margin-bottom: 30px;
             font-size: 16px;
-            color: var(--text);
+            color: $text;
         }
 
         &-desc{
             font-size: 17px;
             letter-spacing: 0px;
             line-height: 30px;
-            color: var(--text);
+            color: $text;
             text-align: center;
             width: 800px;
             margin: 0 auto;
@@ -303,15 +302,15 @@
 
         &-icon-item{
             font-size: 4px;
-            color: var(--text);
+            color: $text;
             margin: 5px;
             padding: 5px;
             border-radius: 50%;
             cursor: pointer;
 
             &.active{
-                color: var(--blue);
-                border: 1px solid var(--blue);
+                color: $blue;
+                border: 1px solid $blue;
             }
         }
     }
@@ -345,7 +344,7 @@
             padding: 20px;
             font-size: 20px;
             font-weight: 700;
-            color: var(--text);
+            color: $text;
             position: relative;
 
             &-input{
@@ -354,7 +353,7 @@
                 padding: 10px 10px 10px 30px;
                 font-size: 20px;
                 border-radius: 100px;
-                color: var(--text);
+                color: $text;
                 font-weight: 100;
             }
 
@@ -362,7 +361,7 @@
                 position: absolute;
                 display: block;
                 font-size: 20px;
-                color: var(--text);
+                color: $text;
                 bottom: 35%;
                 right: 16%;
                 font-weight: 100;
@@ -375,12 +374,12 @@
                 padding-top: 12px;
                 border-radius: 50%;
                 box-sizing: border-box;
-                color: var(--icon);
-                background-color: var(--bg-body);
+                color: $icon;
+                background-color: $bg-body;
 
                 &.active{
-                    color: var(--white);
-                    background-color: var(--icon-active);
+                    color: $white;
+                    background-color: $icon-active;
                     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
                 }
             }
@@ -391,7 +390,7 @@
             margin-top: 100px;
             font-size: 16px;
             letter-spacing: 2px;
-            color: var(--text);
+            color: $text;
         }
     }
 }

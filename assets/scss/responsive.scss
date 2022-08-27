@@ -4,18 +4,6 @@
 
 @media (min-width:740px) and (max-width:1024px){
     /* tablet  */
-    .header{
-        width: 100%;
-    }
-
-    .header__nav{
-        display: block;
-        margin-left: 20px;
-    }
-
-    .header__nav-list{
-        margin-top: 40px;
-    }
 
     .box{
         max-width: 700px;
@@ -24,58 +12,61 @@
         height: 100%;
     }
 
-    .header__nav-list{
-        margin-left: 0px;
+    .header{
+        width: 100%;
+
+        &__nav{
+            display: block;
+            margin-left: 20px;
+
+            &-list{
+                margin-top: 40px;
+                margin-left: 0px;
+            }
+        }
+
+        &__body-box{
+            top: 300px;
+            right: 200px;
+        }
     }
 
-    .header__body-box{
-        top: 300px;
-        right: 200px;
-    }
+    .body{
 
-    .body__portfolio-item{
-        display: block;
-        text-align: center;
-        width: 250px;
-        margin: 0 10px;
-        position: relative;
-    }
+        &y__portfolio-item{
+            display: block;
+            text-align: center;
+            width: 250px;
+            margin: 0 10px;
+            position: relative;
+        }
 
-    .body__extra .box{
-        display: block;
-    }
+        &__extra{
 
-    .body__extra-text{
-        margin-left: 20px;
-        width: 500px;
-    }
+            .box{
+                display: block;
+            }
 
-    .body__extra-btn{
-        margin-top: 20px;
-        margin-left: 20px;
-    }
+            &-text{
+                margin-left: 20px;
+                width: 500px;
+            }
 
-    .body__feedback-desc{
-        width: 500px;
+            &-btn{
+                margin-top: 20px;
+                margin-left: 20px;
+            }
+        }
+
+        &__feedback-desc{
+            width: 500px;
+        }
     }
 }
 
 
 @media (max-width:739px){
     /* Mobile  */
-    .header{
-        width: 100%;
-    }
-
-    .header__nav{
-        display: block;
-        margin-left: 20px;
-    }
-
-    .header__nav-list{
-        margin-top: 40px;
-        flex-wrap: wrap;
-    }
 
     .box{
         max-width: 700px;
@@ -84,58 +75,85 @@
         height: 100%;
     }
 
-    .header__nav-list{
-        margin-left: 0px;
+    .header{
+        width: 100%;
+
+        &__nav{
+            display: block;
+            margin: 0;
+            width: 375px;
+            height: 100%;
+            padding-left: 20px;
+            box-sizing: border-box;
+
+            &-list{
+                margin-top: 40px;
+                flex-wrap: wrap;
+                height: 100%;
+                margin-left: 0px;
+            }
+
+            &-btn{
+                margin-top: 20px;
+            }
+        }
+
+        &__body{
+            width: 300px;
+
+            &-box{
+                top: 337px;
+                right: 31px;
+            }
+        }
     }
 
-    .header__body-box{
-        top: 337px;
-        right: 31px;
-    }
+    .body{
 
-    .header__body{
-        width: 300px;
-    }
+        &__portfolio-item{
+            display: block;
+            text-align: center;
+            width: 250px;
+            margin: 0 10px;
+            position: relative;
+        }
 
-    .body__portfolio-item{
-        display: block;
-        text-align: center;
-        width: 250px;
-        margin: 0 10px;
-        position: relative;
-    }
+        &__extra{
+            .box{
+                display: block;
+            }
 
-    .body__extra .box{
-        display: block;
-    }
+            &-text{
+                margin-left: 20px;
+                width: 300px;
+            }
 
-    .body__extra-text{
-        margin-left: 20px;
-        width: 300px;
-    }
+            &-btn{
+                margin-top: 20px;
+                margin-left: 20px;
+            }
 
-    .body__extra-btn{
-        margin-top: 20px;
-        margin-left: 20px;
-    }
+        }
 
-    .body__feedback-head{
-        width: 300px;
-    }
+        &__feedback{
 
-    .body__feedback-desc{
-        width: 300px;
+            &-head{
+                width: 300px;
+            }
+
+            &-desc{
+                width: 300px;
+            }
+
+        }
     }
 
     .footer-menu{
         width: 100%;
+
+        &__list{
+            display: block;
+        }
     }
 
-    .footer-menu__list{
-        display: block;
-    }
-}
-
-.hi{
-    color: var(#000);
 }

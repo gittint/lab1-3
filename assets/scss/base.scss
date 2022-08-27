@@ -1,3 +1,12 @@
+$bg-head: #f4f2f0;
+$blue : #1769ff;
+$text: #333333;
+$white: white;
+$text-shadow: #ebebeb;
+$bg-body: #f4f4f4;
+$icon : #a7a7a7;
+$icon-active: #32ccfe;
+
 *{
     padding: 0;
     margin: 0;
@@ -8,17 +17,6 @@
     height: 100%;
     margin: 0 auto;
     width: 100%;
-}
-
-:root{
-    --bg-head: #f4f2f0;
-    --blue : #1769ff;
-    --text: #333333;
-    --white: white;
-    --text-shadow: #ebebeb;
-    --bg-body: #f4f4f4;
-    --icon : #a7a7a7;
-    --icon-active: #32ccfe;
 }
 
 html{  
@@ -43,50 +41,52 @@ a{
     color: black;
 }
 
-.base-headbox{
-    font-size: 40px;
-    letter-spacing: 5px;
-    line-height: 60px;
-    color: var(--text-shadow);
-    text-transform: uppercase;
-    font-weight: 700;
-    position: relative;
-    margin-bottom: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+.base{
 
-.base-heading{
-    font-size: 20px;
-    letter-spacing: 5px;
-    line-height: 40px;
-    color: var(--text);
-    text-transform: uppercase;
-    font-weight: 700;
-    position: absolute;
-    /* left: 45%;
-    bottom: 16%; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+    &-headbox{
+        font-size: 40px;
+        letter-spacing: 5px;
+        line-height: 60px;
+        color: $text-shadow;
+        text-transform: uppercase;
+        font-weight: 700;
+        position: relative;
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
-.base-picture__list{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-evenly;
-    width: 85%;
-    margin: 0 auto;
-}
+    &-heading{
+        font-size: 20px;
+        letter-spacing: 5px;
+        line-height: 40px;
+        color: $text;
+        text-transform: uppercase;
+        font-weight: 700;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
-.base-picture__item{
-    margin-top: 50px;
-    margin: 0 50px;
-    width: 250px;
-}
+    &-picture{
 
-.hi{
-    color: #000;
+        &__list{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-evenly;
+            width: 85%;
+            margin: 0 auto;
+        }
+
+        &__item{
+            margin-top: 50px;
+            margin: 0 50px;
+            width: 250px;
+        }
+
+    }
+
 }
